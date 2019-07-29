@@ -1,4 +1,4 @@
-package com.ying.controller;
+package com.ying.net;
 
 import okhttp3.Headers;
 import okhttp3.OkHttpClient;

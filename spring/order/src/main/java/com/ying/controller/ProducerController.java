@@ -13,7 +13,6 @@ import javax.annotation.Resource;
 @RestController
 @EnableBinding(ShopChannel.class)
 public class ProducerController {
-    @Resource(name = ShopChannel.SHOP_OUTPUT)
     private MessageChannel sendShopMessageChannel;
 
     @GetMapping("/sendMsg")

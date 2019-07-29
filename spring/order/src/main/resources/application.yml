@@ -1,23 +1,35 @@
 spring:
   application:
     name: order
-  cloud:
-    stream:
-      bindings:
-        #配置自己定义的通道与哪个中间件交互
-        shop_input: #ShopChannel里Input和Output的值
-          destination: zhibo #目标主题
-        shop_output:
-          destination: zhibo
-      default-binder: kafka #默认的binder是kafka
-    kafka:
-      bootstrap-servers: 192.168.31.205:9092 #kafka服务地址
-      consumer:
-        group-id: consumer1
-      producer:
-        key-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
-        value-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
-        client-id: producer1
+  ## 配置Redis相关
+  redis:
+    database: 1
+    host: 192.168.31.205
+    port: 6379
+    pool:
+      max-idle: 8
+      min-idle: 0
+      max-active: 8
+      max-wait: -1
+    timeout: 5000
+
+#  cloud:
+#    stream:
+#      bindings:
+#        #配置自己定义的通道与哪个中间件交互
+#        shop_input: #ShopChannel里Input和Output的值
+#          destination: zhibo #目标主题
+#        shop_output:
+#          destination: zhibo
+#      default-binder: kafka #默认的binder是kafka
+#    kafka:
+#      bootstrap-servers: 192.168.31.205:9092 #kafka服务地址
+#      consumer:
+#        group-id: consumer1
+#      producer:
+#        key-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
+#        value-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
+#        client-id: producer1
 
 server:
   port: 8100
