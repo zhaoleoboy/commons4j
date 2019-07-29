@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1994fffa-9e77-42b2-976a-2ef6cb057fd6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/order/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/order/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/order/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/order/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,19 +58,34 @@
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.58" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="2" />
+          <entry key="java" value="5" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="2" />
+          <entry key="JAVA" value="5" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="369" />
+          <entry key="xml" value="20" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="369" />
+          <entry key="XML" value="20" />
         </counts>
       </usages-collector>
     </session>
@@ -81,15 +101,48 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="jar://D:/java/jdk1.8.0_112/src.zip!/java/util/Collections.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="4876" column="34" selection-start-line="4876" selection-start-column="34" selection-end-line="4876" selection-end-column="34" />
+            <state relative-caret-position="1288">
+              <caret line="4876" column="38" selection-start-line="4876" selection-start-column="38" selection-end-line="4876" selection-end-column="38" />
               <folding>
                 <element signature="e#188769#188770#0" expanded="true" />
                 <element signature="e#188822#188823#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ying/serializable/JavaSerializableTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="42" column="38" lean-forward="true" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ying/model/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/java/jdk1.8.0_112/src.zip!/java/io/Serializable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="449">
+              <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -117,11 +170,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/ying/commons/FileToolkitTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ying/commons/FileTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ying/commons/ReaderTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ying/commons/WriterTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ying/serializable/JavaSerializableTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ying/model/Person.java" />
       </list>
     </option>
   </component>
@@ -174,29 +229,15 @@
               <item name="io" type="b2602c69:ProjectViewProjectNode" />
               <item name="io" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,150 +251,6 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../.gitignore</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../mintty.exe.stackdump</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/.idea/compiler.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/.idea/encodings.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/.idea/misc.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/.idea/vcs.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/client/pom.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/consumer/pom.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/consumer/src/main/java/com/ying/ConsumerApplication.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/consumer/src/main/java/com/ying/controller/ConsumerController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/consumer/src/main/java/com/ying/model/OrderModel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/consumer/src/main/java/com/ying/service/FeignService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/consumer/src/main/resources/application.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/consumer/target/classes/META-INF/consumer.kotlin_module</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/consumer/target/classes/application.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/order/pom.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/order/src/main/java/com/ying/OrderApplication.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/order/src/main/java/com/ying/controller/OrderController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/order/src/main/java/com/ying/model/OrderModel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/order/src/main/resources/application.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/order/target/classes/application.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/pom.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/provider/pom.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/provider/src/main/java/com/ying/ProviderApplication.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/provider/src/main/java/com/ying/controller/ProviderController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/provider/src/main/java/com/ying/filter/PermisFilter.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/provider/src/main/java/com/ying/model/OrderModel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/provider/src/main/resources/application.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/provider/target/classes/application.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/server/pom.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/server/src/main/java/com/ying/server/EurekaServerApplication.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/server/src/main/resources/application.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/server/target/classes/application.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../spring/spring.iml</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
-  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -366,18 +263,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WriterTest.mergeImage">
-    <configuration name="ReaderTest.testReadList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.JavaSerializableTest.testDeserialize">
+    <configuration name="JavaSerializableTest.testDeserialize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="io" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ying.commons.*" />
+          <option name="PATTERN" value="com.ying.serializable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ying.commons" />
-      <option name="MAIN_CLASS_NAME" value="com.ying.commons.ReaderTest" />
-      <option name="METHOD_NAME" value="testReadList" />
+      <option name="PACKAGE_NAME" value="com.ying.serializable" />
+      <option name="MAIN_CLASS_NAME" value="com.ying.serializable.JavaSerializableTest" />
+      <option name="METHOD_NAME" value="testDeserialize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaSerializableTest.testSerializable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="io" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ying.serializable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ying.serializable" />
+      <option name="MAIN_CLASS_NAME" value="com.ying.serializable.JavaSerializableTest" />
+      <option name="METHOD_NAME" value="testSerializable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -424,22 +337,6 @@
       <option name="PACKAGE_NAME" value="com.ying.commons" />
       <option name="MAIN_CLASS_NAME" value="com.ying.commons.WriterTest" />
       <option name="METHOD_NAME" value="splitImage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WriterTest.testMergeFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="io" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ying.commons.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ying.commons" />
-      <option name="MAIN_CLASS_NAME" value="com.ying.commons.WriterTest" />
-      <option name="METHOD_NAME" value="testMergeFiles" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -508,19 +405,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ReaderTest.testReadList" />
-      <item itemvalue="JUnit.WriterTest.testMergeFiles" />
       <item itemvalue="JUnit.WriterTest.splitImage" />
       <item itemvalue="JUnit.WriterTest" />
       <item itemvalue="JUnit.WriterTest.mergeImage" />
+      <item itemvalue="JUnit.JavaSerializableTest.testSerializable" />
+      <item itemvalue="JUnit.JavaSerializableTest.testDeserialize" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JavaSerializableTest.testDeserialize" />
+        <item itemvalue="JUnit.JavaSerializableTest.testSerializable" />
         <item itemvalue="JUnit.WriterTest.mergeImage" />
         <item itemvalue="JUnit.WriterTest" />
         <item itemvalue="JUnit.WriterTest.splitImage" />
-        <item itemvalue="JUnit.WriterTest.testMergeFiles" />
-        <item itemvalue="JUnit.ReaderTest.testReadList" />
       </list>
     </recent_temporary>
   </component>
@@ -538,22 +435,11 @@
       <workItem from="1563670213502" duration="2143000" />
       <workItem from="1563684988333" duration="1231000" />
       <workItem from="1564222166514" duration="646000" />
+      <workItem from="1564274021020" duration="3442000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WriterTest_testWriteString - 2019.07.21 at 08h 14m 14s.xml">
-      <configuration name="WriterTest.testWriteString" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReaderTest_testReadString - 2019.07.21 at 08h 15m 43s.xml">
-      <configuration name="ReaderTest.testReadString" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReaderTest_testReadString - 2019.07.21 at 08h 16m 05s.xml">
-      <configuration name="ReaderTest.testReadString" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WriterTest_testWriteWithSelectIO - 2019.07.21 at 08h 17m 38s.xml">
-      <configuration name="WriterTest.testWriteWithSelectIO" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="WriterTest_testWriteString - 2019.07.21 at 08h 21m 01s.xml">
       <configuration name="WriterTest.testWriteString" configurationId="JUnit" />
     </history-entry>
@@ -572,26 +458,39 @@
     <history-entry file="WriterTest_mergeImage - 2019.07.21 at 08h 33m 09s.xml">
       <configuration name="WriterTest.mergeImage" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JavaSerializableTest_testSerializable - 2019.07.28 at 08h 41m 33s.xml">
+      <configuration name="JavaSerializableTest.testSerializable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JavaSerializableTest_testDeserialize - 2019.07.28 at 08h 45m 43s.xml">
+      <configuration name="JavaSerializableTest.testDeserialize" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JavaSerializableTest_testDeserialize - 2019.07.28 at 08h 46m 42s.xml">
+      <configuration name="JavaSerializableTest.testDeserialize" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JavaSerializableTest_testDeserialize - 2019.07.28 at 08h 47m 22s.xml">
+      <configuration name="JavaSerializableTest.testDeserialize" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10476000" />
+    <option name="totallyTimeSpent" value="13918000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1864" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Designer" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.17682926" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.17849223" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32917964" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32848233" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="3" visible="true" weight="0.31496882" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.31496882" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.24195223" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.34095633" />
+      <window_info active="true" anchor="bottom" id="Debug" order="8" visible="true" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -629,13 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -704,11 +596,45 @@
     </entry>
     <entry file="jar://D:/java/jdk1.8.0_112/src.zip!/java/util/Collections.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="4876" column="34" selection-start-line="4876" selection-start-column="34" selection-end-line="4876" selection-end-column="34" />
+        <state relative-caret-position="1288">
+          <caret line="4876" column="38" selection-start-line="4876" selection-start-column="38" selection-end-line="4876" selection-end-column="38" />
           <folding>
             <element signature="e#188769#188770#0" expanded="true" />
             <element signature="e#188822#188823#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java/jdk1.8.0_112/src.zip!/java/io/Serializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ying/model/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ying/serializable/JavaSerializableTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="42" column="38" lean-forward="true" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
