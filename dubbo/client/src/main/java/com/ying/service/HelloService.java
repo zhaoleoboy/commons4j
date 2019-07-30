@@ -1,4 +1,4 @@
-package com.example;
+package com.ying.service;
 
 public interface HelloService {
 
