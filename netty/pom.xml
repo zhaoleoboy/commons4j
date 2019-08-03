@@ -11,6 +11,7 @@
     <modules>
         <module>proto</module>
         <module>hello</module>
+        <module>time</module>
     </modules>
 
     <name>netty</name>

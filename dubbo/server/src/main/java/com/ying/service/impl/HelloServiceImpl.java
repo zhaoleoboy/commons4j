@@ -5,7 +5,7 @@ import java.util.Date;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.ying.service.HelloService;
 
-@Service(version = "1.0.0")
+@Service(version = "${user.service.version}")
 public class HelloServiceImpl implements HelloService {
 
 	@Override
