@@ -22,21 +22,23 @@ public class TimeServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        ByteBuf buf = (ByteBuf) msg;
-        byte[] bytes = new byte[buf.readableBytes()];
-        buf.readBytes(bytes);
-        String query = new String(bytes, "UTF-8");
-
+//        ByteBuf buf = (ByteBuf) msg;
+//        byte[] bytes = new byte[buf.readableBytes()];
+//        buf.readBytes(bytes);
+//        String query = new String(bytes, "UTF-8");
+        String query = msg.toString();
+        System.out.println("QUERY is " + query);
         String time = "BAD REQUEST";
         if ("QUERY TIME".equalsIgnoreCase(query)) {
             time = DATE_FORMATE.format(new Date());
         }
+        time += System.getProperty("line.separator");
 
         // 在netty中所有的信息都是封装在缓冲区中的
         ByteBuf result = Unpooled.copiedBuffer(time.getBytes());
         ctx.writeAndFlush(result);
 
-        super.channelRead(ctx, msg);
+//        super.channelRead(ctx, msg);
     }
 
     @Override

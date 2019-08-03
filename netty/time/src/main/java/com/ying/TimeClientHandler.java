@@ -9,23 +9,17 @@ public class TimeClientHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        String query = "QUERY TIME";
-        ByteBuf byteBuf = Unpooled.copiedBuffer(query.getBytes());
-        ctx.writeAndFlush(byteBuf);
-        super.channelActive(ctx);
+        for (int i = 0; i < 5; i++) {
+            byte[] bytes = ("QUERY TIME" + System.getProperty("line.separator")).getBytes();
+            ByteBuf buf = Unpooled.copiedBuffer(bytes);
+            ctx.writeAndFlush(buf);
+        }
     }
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        ByteBuf byteBuf = (ByteBuf) msg;
-        try {
-            byte[] bytes = new byte[byteBuf.readableBytes()];
-            byteBuf.readBytes(bytes);
-            System.out.println("NOW IS: " + new String(bytes, "UTF-8"));
-            ctx.close();
-        } finally {
-            byteBuf.release();
-        }
+        System.out.println(msg.toString());
+//        super.channelRead(ctx, msg);
     }
 
     @Override

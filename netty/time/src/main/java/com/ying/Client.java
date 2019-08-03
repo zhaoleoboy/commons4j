@@ -5,19 +5,27 @@ import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
+import io.netty.handler.codec.LineBasedFrameDecoder;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 
+import java.util.Scanner;
+
 public class Client {
+
     public static void main(String[] args) {
         String ip = "127.0.0.1";
         int port = 8000;
-        for (int i = 0; i < 1000; i++) {
-            new Client().start(ip, port);
-        }
+//        for (int i = 0; i < 100; i++) {
+        Channel channel = new Client().start(ip, port);
+//        }
+        Scanner sc = new Scanner( System.in );
+        System.out.print( "Please enter a string : " );
+        channel.writeAndFlush(sc.next());
     }
 
-    public void start(String ip, int port) {
+    public Channel start(String ip, int port) {
+        Channel channel = null;
         Bootstrap bootstrap = new Bootstrap();
         EventLoopGroup worker = new NioEventLoopGroup();
         bootstrap.group(worker)
@@ -26,18 +34,20 @@ public class Client {
                 .handler(new ChannelInitializer<SocketChannel>() {
                     @Override
                     protected void initChannel(SocketChannel ch) throws Exception {
-                        ChannelPipeline pipeline = ch.pipeline();
-                        pipeline.addLast(new TimeClientHandler());
+                        ch.pipeline().addLast(new LineBasedFrameDecoder(1024));
+                        ch.pipeline().addLast(new StringDecoder());
+                        ch.pipeline().addLast(new TimeClientHandler());
                     }
                 });
         try {
             ChannelFuture future = bootstrap.connect(ip, port).sync();
             future.channel().closeFuture().sync();
+            channel = future.channel();
         } catch (InterruptedException e) {
             e.printStackTrace();
-        } finally {
-            worker.shutdownGracefully();
         }
 
+
+        return channel;
     }
 }
