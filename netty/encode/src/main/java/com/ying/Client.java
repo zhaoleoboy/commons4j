@@ -25,7 +25,11 @@ public class Client {
 //        for (int i = 0; i < 100; i++) {
         Client client = new Client();
         client.start(ip, port);
+        Channel channel = client.getChannel();
 //        }
+//        Scanner sc = new Scanner( System.in );
+//        System.out.print( "Please enter a string : " );
+        channel.writeAndFlush("ssssssss");
     }
 
     public void start(String ip, int port) {
@@ -46,7 +50,6 @@ public class Client {
             ChannelFuture future = bootstrap.connect(ip, port).sync();
             future.channel().closeFuture().sync();
             channel = future.channel();
-            channel.writeAndFlush("TESTTTTTTTTTTT");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
