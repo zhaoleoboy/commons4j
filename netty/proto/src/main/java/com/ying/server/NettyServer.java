@@ -3,6 +3,7 @@ package com.ying.server;
 import com.ying.config.NettyProperties;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
@@ -51,8 +52,17 @@ public class NettyServer {
                 .childHandler(new NettyServerInitializer());
         // 绑定端口，并同步等待成功，即启动服务端
         channelFuture = b.bind(prop.getBindPort()).sync();
-
-        log.info("Server started!");
+        channelFuture.addListener(new ChannelFutureListener() {
+            @Override
+            public void operationComplete(ChannelFuture future) throws Exception {
+                if (future.isSuccess()) {
+                    log.info("启动服务器成功！");
+                } else {
+                    log.error("启动服务器失败，进行断线重连！");
+//        future.channel().eventLoop().schedule(new Ru)
+                }
+            }
+        });
 
     }
 

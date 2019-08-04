@@ -7,6 +7,7 @@ import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoop;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
+import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -35,6 +36,8 @@ public class NettyClient {
     private EventLoopGroup group;
     private ChannelFuture f;
 
+    private SocketChannel channel;
+
 
     /**
      * Netty创建全部都是实现自AbstractBootstrap。 客户端的是Bootstrap，服务端的则是 ServerBootstrap。
@@ -43,6 +46,10 @@ public class NettyClient {
     public void init() {
         group = new NioEventLoopGroup();
         doConnect(new Bootstrap(), group);
+    }
+
+    public void sendMsg(String message) {
+        channel.writeAndFlush(message);
     }
 
     @PreDestroy
@@ -67,15 +74,18 @@ public class NettyClient {
                 bootstrap.option(ChannelOption.SO_KEEPALIVE, true);
                 bootstrap.handler(new NettyClientInitializer());
                 bootstrap.remoteAddress(host, port);
-                f = bootstrap.connect().addListener((ChannelFuture futureListener) -> {
+                ChannelFuture future = bootstrap.connect();
+                f = future.addListener((ChannelFuture futureListener) -> {
                     final EventLoop eventLoop = futureListener.channel().eventLoop();
                     if (!futureListener.isSuccess()) {
                         log.info("与服务端断开连接!在10s之后准备尝试重连!");
                         eventLoop.schedule(() -> doConnect(new Bootstrap(), eventLoop), 10, TimeUnit.SECONDS);
                     }
                 });
+
                 if (initFalg) {
                     log.info("Netty客户端启动成功!");
+                    channel = (SocketChannel) future.channel();
                     initFalg = false;
                 }
             }
