@@ -13,23 +13,11 @@ import java.util.Scanner;
 
 public class Client {
 
-    private Channel channel;
-
-    public Channel getChannel() {
-        return channel;
-    }
-
     public static void main(String[] args) {
         String ip = "127.0.0.1";
         int port = 8000;
-//        for (int i = 0; i < 100; i++) {
         Client client = new Client();
         client.start(ip, port);
-        Channel channel = client.getChannel();
-//        }
-//        Scanner sc = new Scanner( System.in );
-//        System.out.print( "Please enter a string : " );
-        channel.writeAndFlush("ssssssss");
     }
 
     public void start(String ip, int port) {
@@ -43,15 +31,24 @@ public class Client {
                     protected void initChannel(SocketChannel ch) throws Exception {
                         ch.pipeline().addLast(new LineBasedFrameDecoder(1024));
                         ch.pipeline().addLast(new StringDecoder());
-                        ch.pipeline().addLast(new TimeClientHandler());
+                        ch.pipeline().addLast(new StringEncoder());
+                        ch.pipeline().addLast(new ImClientHandler());
                     }
                 });
         try {
-            ChannelFuture future = bootstrap.connect(ip, port).sync();
-            future.channel().closeFuture().sync();
-            channel = future.channel();
+            Channel channel = bootstrap.connect(ip, port).sync().channel();
+            for (; ; ) {
+                Scanner scanner = new Scanner(System.in);
+                String input = scanner.next();
+                channel.writeAndFlush(input + "\r\n");
+                if ("bye".equalsIgnoreCase(input)) {
+                    channel.closeFuture().sync();
+                }
+            }
         } catch (InterruptedException e) {
             e.printStackTrace();
+        } finally {
+            worker.shutdownGracefully();
         }
     }
 }

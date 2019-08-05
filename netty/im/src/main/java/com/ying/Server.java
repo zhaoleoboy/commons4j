@@ -37,7 +37,8 @@ public class Server {
                             // 解决粘包的问题
                             ch.pipeline().addLast(new LineBasedFrameDecoder(1024));
                             ch.pipeline().addLast(new StringDecoder());
-                            ch.pipeline().addLast(new TimeServerHandler());
+                            ch.pipeline().addLast(new StringEncoder());
+                            ch.pipeline().addLast(new ImServerHandler());
                         }
                     }).option(ChannelOption.SO_BACKLOG, 128).
                     childOption(ChannelOption.SO_KEEPALIVE, true);

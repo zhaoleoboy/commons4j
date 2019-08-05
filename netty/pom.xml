@@ -12,7 +12,7 @@
         <module>proto</module>
         <module>hello</module>
         <module>time</module>
-        <module>encode</module>
+        <module>im</module>
         <module>heart</module>
         <module>protocol</module>
         <module>telnet</module>
