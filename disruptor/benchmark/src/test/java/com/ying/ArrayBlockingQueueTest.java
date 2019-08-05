@@ -14,6 +14,11 @@ public class ArrayBlockingQueueTest {
     }
 
     @Test
+    public void testBlock() throws InterruptedException {
+        Thread.sleep(1000000);
+    }
+
+    @Test
     public void test() throws InterruptedException {
         final ArrayBlockingQueue<Data> queue = new ArrayBlockingQueue<>(100000000);
         final long startTime = System.currentTimeMillis();
