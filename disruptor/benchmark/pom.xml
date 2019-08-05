@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>heart</artifactId>
+    <artifactId>benchmark</artifactId>
 
 
     <name>benchmark</name>
