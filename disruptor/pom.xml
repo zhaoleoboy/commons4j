@@ -13,6 +13,7 @@
         <module>guava</module>
         <module>hutool</module>
         <module>json</module>
+        <module>annotation</module>
     </modules>
 
     <name>disruptor</name>
