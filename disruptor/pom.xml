@@ -14,6 +14,7 @@
         <module>hutool</module>
         <module>json</module>
         <module>fork_join</module>
+        <module>annotation</module>
     </modules>
 
     <name>disruptor</name>
