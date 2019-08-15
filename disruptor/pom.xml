@@ -15,6 +15,7 @@
         <module>json</module>
         <module>fork_join</module>
         <module>annotation</module>
+        <module>base</module>
     </modules>
 
     <name>disruptor</name>
